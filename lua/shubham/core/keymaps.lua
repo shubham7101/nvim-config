@@ -44,9 +44,9 @@ map('n', '<leader>xx', ':bdelete!<CR>', '[X]Close [B]uffer')
 map('n', '<leader>nb', '<cmd> enew <CR>', '[N]ew [B]uffer') -- new buffer
 
 -- Window management
-map('n', '<leader>wv', '<C-w>v', 'Split [W]indow [V]ertically')
-map('n', '<leader>wh', '<C-w>s', 'Split [W]indow [H]orizontally')
-map('n', '<leader>we', '<C-w>=', 'Make Split [W]indow [E]qual width and height')
+map('n', '<leader>v', '<C-w>v', 'Split window vertically')
+map('n', '<leader>h', '<C-w>s', 'Split window horizontally')
+-- map('n', '<leader>se', '<C-w>=', 'Make Split [W]indow [E]qual width and height')
 map('n', '<leader>xs', ':close<CR>', '[X]Close [S]plit window')
 
 -- Navigate between splits

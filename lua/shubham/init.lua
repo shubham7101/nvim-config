@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Set up plugins
 require('lazy').setup {
     require 'shubham.plugins.alpha',
+    require 'shubham.plugins.auto-session',
     require 'shubham.plugins.bufferline',
     require 'shubham.plugins.cmp',
     require 'shubham.plugins.colortheme',

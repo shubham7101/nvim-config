@@ -48,11 +48,15 @@ return {
         { '<leader>d', group = '[D]ocument' },
         { '<leader>r', group = '[R]ename' },
         { '<leader>s', group = '[S]earch' },
+
         { '<leader>w', group = '[W]orkspace' },
+        { '<leader>ws', group = '[S]ession' },
+
         { '<leader>o', group = '[O]ption' },
+        { '<leader>ot', group = '[T]heme' },
+
         { '<leader>x', group = '[X]Close' },
         { '<leader>n', group = '[N]ew' }, 
-        { '<leader>w', group = '[W]indow' },
         -- { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       },
     },
