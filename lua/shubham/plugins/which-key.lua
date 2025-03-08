@@ -1,7 +1,6 @@
 return {
   -- Hints keybinds
   'folke/which-key.nvim',
-
   event = 'VimEnter', -- Sets the loading event to 'VimEnter'
     opts = {
       icons = {
@@ -46,18 +45,15 @@ return {
       spec = {
         { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
         { '<leader>d', group = '[D]ocument' },
-        { '<leader>r', group = '[R]ename' },
-        { '<leader>s', group = '[S]earch' },
+        -- { '<leader>r', group = '[R]ename' },
+        { '<leader>s', group = '[S]plit' },
+        { '<leader>f', group = '[F]ind' },
 
         { '<leader>w', group = '[W]orkspace' },
         { '<leader>ws', group = '[S]ession' },
 
-        { '<leader>o', group = '[O]ption' },
+        { '<leader>o', group = '[O]ptions' },
         { '<leader>ot', group = '[T]heme' },
-
-        { '<leader>x', group = '[X]Close' },
-        { '<leader>n', group = '[N]ew' }, 
-        -- { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
       },
     },
 }

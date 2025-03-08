@@ -1,5 +1,6 @@
 return {
   'lukas-reineke/indent-blankline.nvim',
+  event = "BufReadPre",
   main = 'ibl',
   opts = {
     indent = {
@@ -22,20 +23,19 @@ return {
       },
     },
   },
-
-  -- Toggle Indentation Visibility
-  -- vim.keymap.set('n', '<leader>oi', function()
-  --   local indent_blankline = require("indent_blankline")
-  --
-  -- -- Toggle indent_blankline enabled status
-  --   if vim.b.indent_blankline_enabled == nil or vim.b.indent_blankline_enabled then
-  --     vim.b.indent_blankline_enabled = false
-  --     indent_blankline.setup { enabled = false }
-  --     print("Indentation Lines Disabled")
-  --   else
-  --     vim.b.indent_blankline_enabled = true
-  --     indent_blankline.setup { enabled = true }
-  --     print("Indentation Lines Enabled")
-  --   end
-  -- end, { desc = "[O]ption [I]ndentation lines visibility" })
+  init = function()
+--   vim.keymap.set("n", "<leader>oi", function()
+--     if vim.g.indent_blankline_enabled then
+--         vim.g.indent_blankline_enabled = false
+--         -- Disable indent guides by clearing highlight groups
+--         vim.cmd([[highlight clear IndentBlanklineChar]])
+--         print("Indent Guides Disabled")
+--     else
+--         vim.g.indent_blankline_enabled = true
+--         -- Reapply indent guides by reloading the plugin configuration
+--         require("ibl").setup() -- Ensure the plugin is reconfigured
+--         print("Indent Guides Enabled")
+--     end
+-- end, { desc = "[O]ption Toggle [I]ndent Guides" })
+  end,
 }

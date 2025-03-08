@@ -1,9 +1,10 @@
 -- Standalone plugins with less than 10 lines of config go here
 return {
-  {
-    -- Tmux & split window navigation
-    'christoomey/vim-tmux-navigator',
-  },
+  -- {
+  --   -- Tmux & split window navigation
+  --   'christoomey/vim-tmux-navigator',
+  --   event = "VeryLazy",
+  -- },
   {
     -- Detect tabstop and shiftwidth automatically
     'tpope/vim-sleuth',
@@ -15,6 +16,7 @@ return {
   {
     -- GitHub integration for vim-fugitive
     'tpope/vim-rhubarb',
+    event = "VeryLazy",
   },
   {
     -- Autoclose parentheses, brackets, quotes, etc.
@@ -26,7 +28,7 @@ return {
   {
     -- Highlight todo, notes, etc in comments
     'folke/todo-comments.nvim',
-    event = 'VimEnter',
+    event = 'BufReadPost',
     dependencies = { 'nvim-lua/plenary.nvim' },
     opts = { signs = false },
   },
